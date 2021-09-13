@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Home Page</title>
 </head>
@@ -13,11 +14,11 @@
     <section class="homePage">
         <nav class="navBar">
             <div class="navBarL">
-                <img class="logo" src="/food/IMG/logo.png" alt="LOGO">
+                <a href="indexS.html"><img class="logo" src="/food/IMG/logo.png" alt="LOGO"></a>
             </div>
             <div class="navBarC">
-                <a href="#">Menus</a>
-                <a href="#">Contact</a>
+                <a href="indexY.html">Menus</a>
+                <a href="indexJ.html">Contact</a>
             </div>
             <div class="navBarR" onclick="alertCaddie()">
                 <svg class="caddie" enable-background="new 0 0 510.001 510.001" viewBox="0 0 510.001 510.001"
@@ -30,6 +31,22 @@
                 <p>Mon Panier (0)</p>
             </div>
         </nav>
+        <div class="imagesBloc">
+            <div class="imgOverlay">
+                <img class="coke animate__animated animate__bounceInLeft animate__delay-2s" src="/food/IMG/coca.png"
+                    alt="coke">
+                <img class="burger animate__animated animate__bounceInDown animate__delay-1s"
+                    src="/food/IMG/triple steack.png" alt="burger">
+                <img class="fries animate__animated animate__bounceInRight animate__delay-3s" src="/food/IMG/frites.png"
+                    alt="fries">
+                <img class="newLogo nimate__animated animate__fadeIn animate__delay-4s" src="/food/IMG/new.png"
+                    alt="newlogo">
+                <!-- <img class="catchphrasecome nimate__animated animate__fadeIn animate__delay-5s"
+                    src="/food/IMG/ComeTaste.png" alt="Come_Taste">
+                <img class="catchphraseour nimate__animated animate__fadeIn animate__delay-5s"
+                    src="/food/IMG/OurBurgers.png" alt="Our_Burgers"> -->
+            </div>
+        </div>
     </section>
     <script>
         function alertCaddie() {

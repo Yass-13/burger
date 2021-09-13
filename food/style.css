@@ -1,6 +1,28 @@
-body{
-    margin: 0;
+*{
+  margin: 0;
+  padding: 0;
 }
 .burger3{
     height: 2000px;
+}
+/* HOME SECTION */
+.homePage {
+    background-image: url(/food/IMG/BG\ Table.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+/* NAVBAR */
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* NAVBAR LOGO */
+.logo {
+    max-width: 5em;
+}
+/* NAVBAR CADDIE */
+.caddie {
+    max-width: 2em;
 }

@@ -3,7 +3,9 @@
     padding: 0;
 }
 body {
-    font-family: cursive, serif;}
+    font-family: cursive, serif;
+    overflow: hidden;
+}
 
 /* GLOBAL */
 a {
@@ -16,6 +18,7 @@ a {
     background-image: url(/food/IMG/BG\ Table.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: right;
     min-height: 100vh;
 }
 
@@ -46,7 +49,7 @@ a {
 .navBarC a {
     text-align: center;
     font-size: 2.5em;
-    width: 4em;
+    min-width: 4em;
     padding: 0.5em;
 }
 .navBarC a:hover, .navBarR:hover {
@@ -69,12 +72,16 @@ a {
 
 /* IMAGES SIZE AND ANIMATION */
 .imagesBloc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .imgOverlay {
     display: flex;
     align-items: flex-end;
-    width: 100%;
+    width: 80vw;
     height: 80vh;
+    /* border: 2px solid red; */
 
 }
 .imgOverlay img {
@@ -83,19 +90,20 @@ a {
 }
 .coke {
     width: 12%;
-    height: 70%;
+    height: 75%;
     left: 12%;
     z-index: 5;
 }
 .burger {
     width: 25%;
-    height: 45%;
+    height: 60%;
     left: 18%;
+    bottom: 2%;
     z-index: 10;
 }
 .fries {
     width: 22%;
-    height: 60%;
+    height: 70%;
     left: 30%;
     z-index: 5;
 }
@@ -104,4 +112,161 @@ a {
     height: 25%;
     left: 45%;
     z-index: 10;
+}
+.catchphrasecome {
+    width: 30%;
+    height: 15%;
+    right: 17%;
+    top: 40%;
+}
+.catchphraseour {
+    width: 33%;
+    height: 19%;
+    right: 5%;
+    top: 60%;
+}
+
+
+
+/* -----MEDIA QUERIES------ */
+
+
+/* LESS THAN 1200PX WIDTH MEDIA QUERIES */
+@media screen and (max-width: 1200px) {
+.coke {
+    width: 18%;
+    height: 75%;
+    left: 5%;
+    z-index: 5;
+}
+.burger {
+    width: 25%;
+    height: 56%;
+    left: 12%;
+    bottom: 0;
+    z-index: 10;
+}
+.fries {
+    width: 25%;
+    height: 70%;
+    left: 26%;
+    z-index: 5;
+}
+.newLogo {
+    width: 20%;
+    height: 30%;
+    left: 40%;
+    z-index: 10;
+}
+.catchphrasecome {
+    width: 30%;
+    height: 10%;
+    right: 17%;
+    top: 40%;
+}
+.catchphraseour {
+    width: 33%;
+    height: 13%;
+    right: 5%;
+    top: 60%;
+}
+}
+
+
+/* LESS THAN 750PX WIDTH MEDIA QUERIES */
+@media screen and (max-width: 750px) {
+    .navBar {
+        justify-content: center;
+        /* min-height: 10em; */
+    }
+    .navBarC {
+        font-size: 40%;
+    }
+    .txtCaddie {
+        display: none;
+    }
+
+    .coke {
+        width: 24%;
+        height: 75%;
+        left: 10%;
+        z-index: 5;
+    }
+    .burger {
+        width: 40%;
+        height: 56%;
+        left: 23%;
+        bottom: 4%;
+        z-index: 10;
+    }
+    .fries {
+        width: 33%;
+        height: 60%;
+        left: 48%;
+
+        z-index: 5;
+    }
+    .newLogo {
+        width: 30%;
+        height: 30%;
+        left: 63%;
+        z-index: 10;
+    }
+    .catchphrasecome {
+        width: 40%;
+        height: 11%;
+        left: 5%;
+        top: 90%;
+
+    }
+    .catchphraseour {
+        width: 43%;
+        height: 13%;
+        left: 56%;
+        top: 90%;
+        
+    }
+}
+/* LESS THAN 425PX WIDTH MEDIA QUERIES */
+@media screen and (max-width: 425px) {
+    .coke {
+        width: 25%;
+        height: 70%;
+        left: 5%;
+        z-index: 5;
+    }
+    .burger {
+        width: 50%;
+        height: 45%;
+        left: 18%;
+        bottom: 4%;
+        z-index: 10;
+    }
+    .fries {
+        width: 40%;
+        height: 70%;
+        left: 48%;
+
+        z-index: 5;
+    }
+    .newLogo {
+        width: 25%;
+        height: 25%;
+        left: 63%;
+        z-index: 10;
+    }
+    .catchphrasecome {
+        width: 40%;
+        height: 8%;
+        left: 5%;
+        top: 92%;
+
+    }
+    .catchphraseour {
+        width: 43%;
+        height: 9%;
+        left: 56%;
+        top: 92%;
+        
+    }
 }

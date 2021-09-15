@@ -1,3 +1,4 @@
+
 body {
     font-family: cursive, serif;
 }
@@ -150,9 +151,4 @@ a {
 .content::-webkit-scrollbar {
     display: none;
 }
-
-
-
-
-
 }

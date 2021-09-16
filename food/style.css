@@ -151,4 +151,19 @@ a {
 .content::-webkit-scrollbar {
     display: none;
 }
+.navBar {
+    justify-content: center;
+    /* min-height: 10em; */
 }
+.navBarC {
+    font-size: 70%;
+}
+.txtCaddie {
+    display: none;
+}
+}
+
+@media screen and (max-width: 425px) {
+    .navBarC {
+        font-size: 40%;
+    }

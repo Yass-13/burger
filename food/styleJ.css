@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: cursive, serif;}
+/* GLOBAL */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+/* NAVBAR */
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
+
+/* NAVBAR LOGO */
+.navBarL {
+    padding-left: 2em;
+}
+.logo {
+    max-width: 5em;
+}
+
+/* NAVBAR LINK */
+.navBarC {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-width: 45vw;
+}
+.navBarC a {
+    text-align: center;
+    font-size: 2.5em;
+    min-width: 4em;
+    padding: 0.5em;
+}
+.navBarC a:hover, .navBarR:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+/* NAVBAR CADDIE */
+.navBarR {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.3em;
+}
+.caddie {
+    fill: #fff;
+    max-width: 2em;
+}
+#Section{
+    background-image: url("/food/IMG/BG Table.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+#Bloc{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+}
+#Text{
+    background-color:rgba(128, 128, 128, 0);
+    height: 10em;
+    width: 10em;  
+}
+#textarea{
+    border-radius: 10px;
+    float: left;
+    width: 65vw;
+    height: 50%;
+    outline: none;
+    resize: none;            
+}
+#Avis{
+    background-color: white;
+    border-radius: 7px;
+    margin: 0.5em;
+}
+.LogoAvis{
+    display: flex;
+    justify-content: space-between;
+}
+#LogoBulle, #LogoPizza{
+    display: flex;
+    align-items: center;
+}
+#LogoBulle svg{
+    width: 3em;
+    height:auto;
+}
+#LogoPizza svg{
+    width: 2em;
+    height: auto;
+}
+#Contact{
+    background-color: rgba(128, 128, 128, 0.747);
+    color: white;
+    height: 30em;
+    width: 12em;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#LogoHorloge, #LogoPhone, #LogoMap {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 1em;
+}
+#LogoHorloge svg{
+    width: 1.5em;
+    height: auto;    
+}
+#LogoPhone svg{
+    width: 1.5em;
+    height: auto;
+}
+#LogoMap svg{
+    width: 1.5em;
+    height: auto;
+}
+#SocialMedia{
+    display:flex;
+    justify-content: space-around;
+}
+#FacebookLogo svg{
+    width: 2em;
+    height: auto;
+    padding:2px;
+}
+#TwitterLogo svg{
+    width: 2em;
+    height: auto;
+    padding:2px;
+}
+#InstaLogo svg{
+    width: 2em;
+    height: auto;
+    box-shadow: black;
+    padding:2px;
+}
+@media (max-width: 420px) {
+    #Section{
+        background-image: url("/food/IMG/BG Table.jpg");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 120vh;
+    }
+    #Bloc{
+        display:flex;
+        flex-direction: column-reverse;
+    }
+    #Contact{
+        background-color: rgba(128, 128, 128, 0.747);
+        color: white;
+        height: auto;
+        width: auto;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    #textarea {
+        width: 90vw;
+    }
+    #TextEtAvis{
+        display:flex;
+        flex-direction: column-reverse;
+    }
+    .CommentAvis{
+        font-size: 0.8rem;
+        padding:0.5em;
+    }
+    #LogoHorloge, #LogoPhone, #LogoMap {
+        display:flex;
+        justify-content: center;
+        border-bottom: 2px solid #fff;
+        padding-bottom: 1em;
+    }
+    #LogoHorloge svg{
+        width: 1.5em;
+        height: auto;
+        padding-right: 1em;
+    }
+    #LogoPhone svg{
+        width: 1.5em;
+        height: auto;
+        padding-right: 1em;
+    }
+    #LogoMap svg{
+        width: 1.5em;
+        height: auto;
+        padding-right: 0.5em;
+    }
+    #LogoBulle svg{
+        width: 1.5em;
+        height:auto;
+    }
+    #LogoPizza svg{
+        width: 1.7em;
+        height: auto;
+    }
+    .navBar {
+        font-size: 40%;
+    }
+    
+}
+@media screen and (max-width: 800px) {
+    .navBar {
+        justify-content: center;
+        /* min-height: 10em; */
+    }
+    .navBarC {
+        font-size: 70%;
+    }
+    .txtCaddie {
+        display: none;
+    }
+}

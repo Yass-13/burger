@@ -154,7 +154,7 @@ a {
         background-position: right;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 150vh;
+        height: 120vh;
     }
     #Bloc{
         display:flex;
@@ -209,16 +209,20 @@ a {
         width: 1.7em;
         height: auto;
     }
-    .navBarC {
+    .navBar {
         font-size: 40%;
+    }
+    
+}
+@media screen and (max-width: 800px) {
+    .navBar {
+        justify-content: center;
+        /* min-height: 10em; */
+    }
+    .navBarC {
         font-size: 70%;
     }
     .txtCaddie {
         display: none;
-        height: 11%;
-        left: 5%;
-        top: 90%;
-        z-index: 15;
-
     }
 }

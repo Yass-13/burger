@@ -1,0 +1,204 @@
+        /* GLOBAL */
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: cursive, serif;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    /* BACKGROUND */
+    
+    .menu {
+        background-image: url(/burger/food/IMG/BG\ Table.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        background-position: right;
+    }
+    /* NAVBAR */
+    
+    .navBar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: #fff;
+    }
+    /* NAVBAR LOGO */
+    
+    .navBarL {
+        padding-left: 2em;
+    }
+    
+    .logo {
+        max-width: 5em;
+    }
+    /* NAVBAR LINK */
+    
+    .navBarC {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        min-width: 45vw;
+    }
+    
+    .navBarC a {
+        text-align: center;
+        font-size: 2.5em;
+        width: 4em;
+        padding: 0.5em;
+    }
+    
+    .navBarC a:hover,
+    .navBarR:hover {
+        background-color: rgba(0, 0, 0, 0.6);
+        cursor: pointer;
+    }
+    /* NAVBAR CADDIE */
+    
+    .navBarR {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+    }
+    
+    .caddie {
+        fill: #fff;
+        max-width: 2em;
+    }
+    
+    .tablo {
+        margin: 100px 50px;
+        border-radius: 50px;
+    }
+    /* MENU DE SELECTION  */
+    
+    .tab {
+        overflow: hidden;
+        border-bottom: 1px solid rgb(0, 0, 0);
+        background-color: #c4c4c4;
+        max-height: 70vh;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 15px 15px 0 0;
+        margin: 70px 50px 0 50px;
+    }
+    /* BOUTONS  */
+    
+    .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 20px;
+    }
+    /* BOUTONS HOVER */
+    
+    .tab button:hover {
+        background-color: #2B2727;
+        color: white;
+    }
+    /* BOUTON ACTIF */
+    
+    .tab button.active {
+        background-color: #2B2727;
+        color: white;
+    }
+    /* CONTENU DES CATEGORIES */
+    
+    .content {
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 6px 12px;
+        border-top: 1px solid rgb(0, 0, 0);
+        animation: fadeEffect 1s;
+        /* Fading effect takes 1 second */
+        background-color: #c4c4c4;
+        text-align: center;
+        max-height: 66vh;
+        border-radius: 0 0 15px 15px;
+        margin: 0 50px 0 50px;
+        overflow: scroll;
+    }
+    
+    .content img {
+        max-width: 200px;
+    }
+    
+    .biere img {
+        height: 200px;
+    }
+    
+    .content div {
+        max-width: 250px;
+    }
+    /* AFFICHAGE DE #Menu EN PREMIER */
+    
+    #Pizza,
+    #Burger,
+    #Tex-Mex,
+    #Boissons,
+    #Desserts {
+        display: none;
+    }
+    
+    #Menu {
+        display: flex;
+    }
+    /* ANIMATION */
+    
+    @keyframes fadeEffect {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    /* MEDIA QUERIES */
+    
+    @media screen and (max-width: 750px) {
+        .tab {
+            flex-direction: column;
+            overflow: scroll;
+            height: 300px;
+            margin-top: 0px;
+        }
+        .content {
+            max-height: 400px;
+        }
+        .tab::-webkit-scrollbar {
+            display: none;
+        }
+        .content::-webkit-scrollbar {
+            display: none;
+        }
+        .navBar {
+            justify-content: center;
+            /* min-height: 10em; */
+        }
+        .navBarC {
+            font-size: 70%;
+        }
+        .txtCaddie {
+            display: none;
+        }
+    }
+    
+    @media screen and (max-width: 425px) {
+        .navBarC {
+            font-size: 40%;
+        }

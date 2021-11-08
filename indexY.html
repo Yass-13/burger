@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="styleY.css">
+</head>
+
+<body>
+    <section class="menu">
+        <nav class="navBar">
+            <div class="navBarL">
+                <a href="Index.html"><img class="logo" src="./IMG/logo.png" alt="LOGO"></a>
+            </div>
+            <div class="navBarC">
+                <a href="indexY.html">Menus</a>
+                <a href="indexJ.html">Contact</a>
+            </div>
+            <div class="navBarR" onclick="alertCaddie()">
+                <svg class="caddie" enable-background="new 0 0 510.001 510.001" viewBox="0 0 510.001 510.001" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <path
+                            d="m510.001 390.001h-74.961c-.013 0-.026-.001-.039-.001s-.025.001-.039.001h-254.923c-.013 0-.026-.001-.039-.001s-.025.001-.039.001h-74.961c-8.271 0-15-6.729-15-15 0-8.272 6.729-15.001 15-15.001h360.001v-30h-288.84l-9-29.999h240.077l52.5-210.001h-355.577l-18-60h-86.161v30h63.84l81 270h-39.84c-24.813 0-45 20.188-45 45.002 0 24.812 20.187 44.999 45 44.999h32.58c-1.665 4.694-2.58 9.741-2.58 15 0 24.812 20.187 45 45.001 45 24.813 0 45-20.188 45-45 0-5.259-.915-10.306-2.58-15h170.16c-1.665 4.694-2.58 9.741-2.58 15 0 24.812 20.187 45 45.001 45 24.813 0 45-20.188 45-45 0-5.259-.915-10.306-2.58-15h32.58v-30zm-369.84-180h48.538l5 60h-35.538zm144.84-30.001v-60h43.698l-5 60zm36.197 30.001-5 60h-31.198v-60zm-66.198-30.001h-38.698l-5-60h43.698zm0 30.001v60h-31.198l-5-60zm91.302 60 5-60h47.513l-15 60zm60.013-90.001h-52.512l5-60h62.512zm-225.117-60 5 60h-55.038l-18-60zm13.803 315.001c0 8.271-6.729 15-15 15-8.272 0-15.001-6.729-15.001-15 0-8.265 6.719-14.989 14.981-15h.039c8.262.011 14.981 6.735 14.981 15zm255 0c0 8.271-6.729 15-15 15-8.272 0-15.001-6.729-15.001-15 0-8.265 6.719-14.989 14.981-15h.039c8.262.011 14.981 6.735 14.981 15z" />
+                    </g>
+                </svg>
+                <p><span class="txtCaddie">Mon Panier </span>(0)</p>
+            </div>
+        </nav>
+        <class class="tablo">
+            <!-- Tab links -->
+
+            <div class="tab">
+                <button class="tablinks" onclick="openFood(event, 'Menu')">Menu</button>
+                <button class="tablinks" onclick="openFood(event, 'Pizza')">Pizza</button>
+                <button class="tablinks" onclick="openFood(event, 'Burger')">Burger</button>
+                <button class="tablinks" onclick="openFood(event, 'Tex-Mex')">Tex-Mex</button>
+                <button class="tablinks" onclick="openFood(event, 'Boissons')">Boissons </button>
+                <button class="tablinks" onclick="openFood(event, 'Desserts')">Desserts</button>
+            </div>
+            <!-- Tab content -->
+            <div id="Menu" class="content">
+                <div class="menuclassic">
+                    <img src="./IMG/Menu Simple.png" alt="Mclassic">
+                    <p>9,00€</p>
+                    <p>"Menu classique: un Burger + Frites + une Boisson"</p>
+                </div>
+                <div class="Maxi">
+                    <img src="./IMG/Menu Maxi.png" alt="MMaxi">
+                    <p>15,00€</p>
+                    <p>"Menu Maxi: Un Burger + Grande Frites + Une Grande Boisson + Dessert"</p>
+                </div>
+                <div class="Menupizza">
+                    <img src="./IMG/Menu Pizza.png" alt="Mpiza">
+                    <p>17,00€</p>
+                    <p>"Menu Pizza: une Pizza + Tex-Mex(au choix) + Deux Boissons"</p>
+                </div>
+                <div class="MenuKid">
+                    <img src="./IMG/Menu Kid.png" alt="Mkid">
+                    <p>8,00€</p>
+                    <p>"Menu Enfant: Petit Burger + Petite Frite + Jus de Fruits + Dessert</p>
+                </div>
+            </div>
+
+            <div id="Pizza" class="content">
+                <div class="pfromage">
+                    <img src="./IMG/Pizza Fromage.png" alt="Pizzafromage">
+                    <p>8,00€</p>
+                    <p>Pizza au fromage et base tomate</p>
+                </div>
+                <div class="ppeperoni">
+                    <img src="./IMG/Pizza pepperonni.png" alt="Ppeperoni">
+                    <p>9,50€</p>
+                    <p>Pizza base tomate avec fromage et pepperonni</p>
+                </div>
+                <div class="pforest">
+                    <img src="./IMG/Pizza Forestiere.png" alt="Pforestiere">
+                    <p>10,00€</p>
+                    <p>Pizza base tomate champignon tomates en tranches et brocolis</p>
+                </div>
+                <div class="poriental">
+                    <img src="./IMG/pizza orientale.png" alt="poriental">
+                    <p>12,00€</p>
+                    <p>Pizza base tomate poivrons champignons merguez </p>
+                </div>
+                <div class="pkebab">
+                    <img src="./IMG/pizza Kebab.png" alt="Pkebab">
+                    <p>13,00€</p>
+                    <p>"Pizza base créme fraiche poivrons poulet kebab </p>
+                </div>
+            </div>
+
+            <div id="Burger" class="content">
+                <div class="triplesteack">
+                    <img src="./IMG/triple steack.png" alt="3xsteack">
+                    <p>5,50€</p>
+                    <p>"Un Burger avec trois steacks et sauce au poivre"</p>
+                </div>
+                <div class="Chicken">
+                    <img src="./IMG/chicken.png" alt="chicken">
+                    <p>5,00€</p>
+                    <p>"Un Burger avec un morceau de poulet croustillant"</p>
+                </div>
+                <div class="Bacon">
+                    <img src="./IMG/bacon.png" alt="bacon">
+                    <p>7,00€</p>
+                    <p>"Un Burger avec deux steacks et des tranches de bacon"</p>
+                </div>
+                <div class="Crispy">
+                    <img src="./IMG/crispy.png" alt="crispy">
+                    <p>6,50€</p>
+                    <p>"Un Burger avec ses oignons frits et croquants"</p>
+                </div>
+                <div class="Black">
+                    <img src="./IMG/black burger.png" alt="Black">
+                    <p>10,00€</p>
+                    <p>"Un Burger a la couleur sombre mais delicieux"</p>
+                </div>
+            </div>
+
+            <div id="Tex-Mex" class="content">
+                <div class="nuggets">
+                    <img src="./IMG/nuggets.png" alt="nuggets">
+                    <p>5,00€</p>
+                    <p>six nuggets de poulet (epicés au choix) </p>
+                </div>
+
+                <div class="wings">
+                    <img src="./IMG/wings.png" alt="wing">
+                    <p>4,50€</p>
+                    <p>six wings de poulets (epicés au choix)</p>
+                </div>
+
+                <div class="frites">
+                    <img src="./IMG/frites (2).png" alt="Frites">
+                    <p>2,50€ </p>
+                    <p>frites</p>
+                </div>
+
+                <div class="stickmozza">
+                    <img src="./IMG/stick mozza.png" alt="stickmozza">
+                    <p>4,00€</p>
+                    <p>5 stick fourré a la mozza</p>
+                </div>
+
+                <div class="oignonring">
+                    <img src="./IMG/oignon ring.jpg" alt="oignonring">
+                    <p>3,00€</p>
+                    <p>6 oignon rings frits</p>
+                </div>
+
+            </div>
+
+            <div id="Boissons" class="content">
+                <div class="cocan">
+                    <img src="./IMG/canette cocacola.jpg" alt="coca canette">
+                    <p>1,50€</p>
+                    <p>Coca-cola 33cl</p>
+                </div>
+                <div class="spritecan">
+                    <img src="./IMG/sprite canette.png" alt="sprite canette">
+                    <p>1,50€</p>
+                    <p>Sprite 33cl</p>
+                </div>
+                <div class="icetea">
+                    <img src="./IMG/ice tea canette.png" alt="ice tea canette">
+                    <p>1,50€</p>
+                    <p>Ice tea 33cl</p>
+                </div>
+                <div class="oasis">
+                    <img src="./IMG/oasis canette.png" alt="oasis canette">
+                    <p>1,50€</p>
+                    <p>Oasis 33cl</p>
+                </div>
+                <div class="perrier">
+                    <img src="./IMG/perrier.png" alt="perrier">
+                    <p>1,30€</p>
+                    <p>Perrier 50cl</p>
+                </div>
+                <div class="biere">
+                    <img src="./IMG/beer.jpg" alt="biere 86">
+                    <p>2,50€</p>
+                    <p>Biere 86 50cl</p>
+                </div>
+            </div>
+
+            <div id="Desserts" class="content">
+                <div class="tiramisu">
+                    <img src="./IMG/tiramisu.png" alt="tiramisu">
+                    <p>4,50€</p>
+                    <p>Tiramisu au café</p>
+                </div>
+
+                <div class="tartedaim">
+                    <img src="./IMG/tarte au daim.png" alt="tarte au daim">
+                    <p>4,50€</p>
+                    <p>Tarte au Daim</p>
+                </div>
+
+                <div class="donut">
+                    <img src="./IMG/donut oreo.png" alt="donut">
+                    <p>3,50€</p>
+                    <p>Donut Oreo</p>
+                </div>
+
+                <div class="brownie">
+                    <img src="./IMG/brownie.png" alt="brownie">
+                    <p>3,50€</p>
+                    <p>Brownie aux eclats de cacahuetes</p>
+                </div>
+
+                <div class="compote">
+                    <img src="./IMG/compote.png" alt="compote">
+                    <p>1,50€</p>
+                    <p>Compote Pomme/Pêche</p>
+                </div>
+
+            </div>
+            </div>
+    </section>
+    <script>
+        function openFood(evt, cityName) {
+
+            var i, content, tablinks;
+
+            var content = document.getElementsByClassName("content");
+
+            for (i = 0; i < content.length; i++) {
+                content[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "flex";
+            evt.currentTarget.className += " active";
+        }
+
+        function alertCaddie() {
+            alert("Votre caddie est vide!");
+        }
+    </script>
+</body>
+
+
+
+</html>

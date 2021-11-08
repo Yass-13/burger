@@ -77,7 +77,7 @@ a {
 }
 
 #Section {
-    background-image: url("/food/IMG/BG Table.jpg");
+    background-image: url("./IMG/BG Table.jpg");
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -206,7 +206,7 @@ a {
 
 @media (max-width: 420px) {
     #Section {
-        background-image: url("/food/IMG/BG Table.jpg");
+        background-image: url("./IMG/BG Table.jpg");
         background-position: right;
         background-repeat: no-repeat;
         background-size: cover;

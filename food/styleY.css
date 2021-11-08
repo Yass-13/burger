@@ -18,7 +18,7 @@ a {
 /* BACKGROUND */
 
 .menu {
-    background-image: url("/food/IMG/BG\ Table.jpg");
+    background-image: url("./IMG/BG\ Table.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;

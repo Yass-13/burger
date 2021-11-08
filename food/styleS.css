@@ -15,7 +15,7 @@ a {
 
 /* HOME SECTION */
 .homePage {
-    background-image: url("/food/IMG/BG Table.jpg");
+    background-image: url("./IMG/BG Table.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
